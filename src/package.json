@@ -1,0 +1,9 @@
+{
+  "name": "blockery",
+  "version": "0.0.0",
+  "description": "a clicker game",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "Harrison Thorne"
+}
