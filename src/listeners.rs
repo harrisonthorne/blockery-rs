@@ -2,15 +2,15 @@
 
 const Listeners = {
    blockCountListeners: [],
-   invokeBlockCountListeners: function (count) {
-      this.blockCountListeners.forEach(listener => {
+   invokeBlockCountListeners: |count| {
+      self.blockCountListeners.forEach(listener => {
          listener.onBlockCount(count);
       });
    },
 
    factoryPurchaseListeners: [],
-   invokeFactoryPurchaseListeners: function (factoryCode, count) {
-      this.factoryPurchaseListeners.forEach(listener => {
+   invokeFactoryPurchaseListeners: |factoryCode, count| {
+      self.factoryPurchaseListeners.forEach(listener => {
          listener.onFactoryPurchase(factoryCode, count);
       });
    }
